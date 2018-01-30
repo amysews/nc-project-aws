@@ -11,8 +11,6 @@ var pool = mysql.createConnection({
   database: config.dbname
 });
 
-
-
 console.log('Loading function');
 
 exports.handler = (event, context, callback) => {
