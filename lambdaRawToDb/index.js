@@ -31,9 +31,9 @@ exports.handler = function(event, context) {
  console.log(id, "id");
  let table;
  if (key.slice(0,1) == 'a') {
-   return table = 'answers'
+   table = 'answers'
  } else {
-   return table = 'questions'
+   table = 'questions'
  }
  console.log(table, "table");
  context.callbackWaitsForEmptyEventLoop = false;
@@ -77,4 +77,5 @@ exports.handler = function(event, context) {
   }
   context.succeed("Job well done");
  });
+ return;
 };
